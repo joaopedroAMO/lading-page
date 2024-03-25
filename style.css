@@ -20,6 +20,11 @@ body{
     background-color: #feede3;
 }
 
+#menu-responsivo{
+    display: none;
+    background-color: #feede3;
+}
+
 #logo{
     cursor: default;
     padding: 10px;
@@ -216,6 +221,42 @@ p {
 @media only screen and (max-width: 600px) {
     #menu{
         display: none;
+    }
+
+    #menu-responsivo{
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #responsivo-container{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 10px 20px;
+        background-color: #fff;
+        width: 200px;
+        height: 100%;
+        align-items: flex-end;
+    }
+    
+    #responsivo-container ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #responsivo-container ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
 /* apresentação */
