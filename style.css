@@ -285,7 +285,7 @@ p {
 
     #apresentation #text h1{
         font-size: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
         
     }
 
@@ -306,22 +306,30 @@ p {
     }
 
     #features-container{
-        padding: 10px 20px;
+        max-width: 100%;
+        padding: 10px 0px;
+        overflow: hidden;
+        background-color: #eaaa87;
     }
+    
 
     #features{
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
 
     #features > p {
         width: 100%;
         font-size: small;
+        padding: 20px;
     }
 
     #features-container ul{
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        padding: 0px 520px;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
     }
 
     .card{
