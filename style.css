@@ -237,7 +237,7 @@ p {
         right: 0;
         top: 0;
         padding: 10px 20px;
-        background-color: #fff;
+        background-color: #fcd3bc;
         width: 200px;
         height: 100%;
         align-items: flex-end;
@@ -257,6 +257,23 @@ p {
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+
+    .link-responsivo{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .link-responsivo a{
+        display: flex;
+        text-align: left;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-responsivo a:hover{
+        color: #feb88f;
     }
 
 /* apresentação */
@@ -308,9 +325,9 @@ p {
     }
 
     .card{
-        min-width: 300px;
+        min-width: 250px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        padding: 50px;
+        padding: 30px;
     }
 
     .card:hover{
