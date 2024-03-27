@@ -20,6 +20,61 @@ body{
     background-color: #feede3;
 }
 
+/* responsivo-menu */
+#menu-responsivo{
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#responsivo-container{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px 20px;
+    background-color: #fcd3bc;
+    width: 200px;
+    height: 400px;
+    border-bottom-left-radius: 20px;
+    align-items: flex-end;
+}
+
+#responsivo-container ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#responsivo-container ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.link-responsivo{
+    padding: 10px;
+    width: 100%;
+}
+
+.link-responsivo a{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.link-responsivo a:hover{
+    color: #feb88f;
+}
+/* fim-responssivo */
+
 #menu-responsivo{
     display: none;
     background-color: #feede3;
@@ -225,9 +280,54 @@ p {
 }
 
 .about-txt span{
-    color: rgb(114, 233, 233);
+    color: rgb(171, 249, 249);
 }
 
+/* responsivo-tablete */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    #menu{
+        display: none;
+    }
+
+    #menu-responsivo{
+        display: flex;
+    }
+
+    #apresentation{
+        padding: 60px 100px;
+    }
+
+    #apresentation #text h1{
+        font-size: 200%;
+        margin-top: 50px;
+        
+    }
+
+    #features{
+        padding: 60px 40px;
+    }
+
+    #features-container ul li > p {
+        font-size: smaller;
+    }
+
+    .card{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px 10px;
+    }
+
+    .card:hover{
+        background-color: #fff;
+    }
+
+    #about{
+        padding: 60px 20px;
+    }
+
+}
+/* fim-responsivo-tablete */
+
+/* responsivo-mobile */
 @media only screen and (max-width: 600px) {
     #menu{
         display: none;
@@ -246,7 +346,7 @@ p {
         position: fixed;
         right: 0;
         top: 0;
-        padding: 10px 20px;
+        padding: 10px 10px;
         background-color: #fcd3bc;
         width: 200px;
         height: 400px;
@@ -268,6 +368,13 @@ p {
         align-items: center;
         justify-content: center;
         width: 100%;
+        background-color: #feb88f;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    #responsivo-container ul li:first-child{
+        margin-top: 10px;
     }
 
     .link-responsivo{
@@ -284,7 +391,7 @@ p {
     }
 
     .link-responsivo a:hover{
-        color: #feb88f;
+        color: #fcd3bc;
     }
 
 /* apresentação */
@@ -357,3 +464,4 @@ p {
         padding: 20px 20px;
     }
 }
+/* fim-reponsivo-mobile */
